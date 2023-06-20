@@ -31,29 +31,31 @@ function mergeSort(array) {
   // Devolver el array ordenado resultante
   // Tu código:
   //okey probemos ahora
-  let middle = Math.floor(array.length/2)
-let left = array.slice(0, middle)
-let right = array.slice(middle) 
+  let middle = Math.floor(array.length / 2);
+  let left = array.slice(0, middle);
+  let right = array.slice(middle);
   if (array.length === 1) {
     return array;
   }
- return merge(mergeSort(left), mergeSort(right))
+  return merge(mergeSort(left), mergeSort(right));
 
-function merge(left, right){
-let leftIndex = 0
-let rightIndex = 0
-let mergeArray = []
-while(leftIndex<left.length && rightIndex<right.length){
-  if (left[leftIndex]< right[rightIndex]){
-    mergeArray.push(left[leftIndex])
-    leftIndex++
-  } else {
-    mergeArray.push(right[rightIndex])
-    rightIndex++
+  function merge(left, right) {
+    let leftIndex = 0;
+    let rightIndex = 0;
+    let mergeArray = [];
+    while (leftIndex < left.length && rightIndex < right.length) {
+      if (left[leftIndex] < right[rightIndex]) {
+        mergeArray.push(left[leftIndex]);
+        leftIndex++;
+      } else {
+        mergeArray.push(right[rightIndex]);
+        rightIndex++;
+      }
+    }
+    return mergeArray
+      .concat(left.slice(leftIndex))
+      .concat(right.slice(rightIndex));
   }
-}
-return mergeArray.concat(left.slice(leftIndex)).concat(right.slice(rightIndex))
-}
 }
 
 // No modificar nada debajo de esta línea

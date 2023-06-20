@@ -16,8 +16,8 @@ otroContador()      // 2 */
 function counter() {
   var count = [];
   return function () {
-    count++;
-    return count;
+      count++;
+      return count;
   };
 }
 
