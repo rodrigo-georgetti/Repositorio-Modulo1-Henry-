@@ -54,6 +54,7 @@ var countProps = function (obj) {
 
 LinkedList.prototype.changeNotNumbers = function () {
   // Tu código aca:
+  let queue=[]
 };
 
 // Implementar la función mergeQueues que a partir de dos queues recibidas por parametro
