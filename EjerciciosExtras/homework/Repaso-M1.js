@@ -41,7 +41,7 @@ var countArray = function (array) {
 
 var countProps = function (obj) {
   // Tu código aca:
-  let obj={}
+  //let obj={}
 };
 
 // Implementar el método changeNotNumbers dentro del prototype de LinkedList que deberá cambiar
