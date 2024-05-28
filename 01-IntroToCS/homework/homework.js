@@ -1,23 +1,23 @@
 "use strict";
 
-function BinarioADecimal(num) {
-  var numeroBinario = num;
-  var numeroDecimal = 0;
-  for (let i = 0; i < numeroBinario.length; i++) {
-    numeroDecimal +=
-      numeroBinario[i] * Math.pow(2, numeroBinario.length - i - 1);
+function BinarioADecimal(number) {
+  let binaryNumber = number;
+  let decimalNumber = 0;
+  for (let i = 0; i < binaryNumber.length; i++) {
+    decimalNumber +=
+      binaryNumber[i] * Math.pow(2, binaryNumber.length - i - 1);
   }
-  return numeroDecimal;
+  return decimalNumber;
 }
 
-function DecimalABinario(num) {
-  var numeroDecimal = num;
-  var numeroBinario = "";
-  while (numeroDecimal > 0) {
-    numeroBinario += numeroDecimal % 2;
-    numeroDecimal = Math.floor(numeroDecimal / 2);
+function DecimalABinario(number) {
+  let decimalNumber = number;
+  let binariNumber = "";
+  while (decimalNumber > 0) {
+    binariNumber += decimalNumber % 2;
+    decimalNumber = Math.floor(decimalNumber / 2);
   }
-  return numeroBinario.split("").reverse().join("");
+  return binariNumber.split("").reverse().join("");
 }
 
 module.exports = {
