@@ -2,9 +2,9 @@
 
 ## 📒 Temas de la clase
 
--  Lenguaje y teoría computacional.
+- Lenguaje y teoría computacional.
 
--  Sistemas de numeración.
+- Sistemas de numeración.
 
 ---
 
@@ -23,8 +23,8 @@ Al finalizar esta homework comprenderás la lógica computacional a través de l
 ## 📋 Instrucciones preliminares
 
 1. Para ubicarte dentro de la carpeta homework escribe en tu terminal los siguientes comandos:
-   -  cd + [01-IntroToCS].
-   -  cd + [homework].
+   - cd + [01-IntroToCS].
+   - cd + [homework].
 2. Luego, instalaremos las dependencias con el comando:
 
 ```javascript
@@ -52,7 +52,7 @@ En el archivo **_homework.js_** resuelve los siguientes ejercicios:
 Declara una función que reciba por parámetro un número en formato string en base binaria y retorne el mismo número en base decimal. El valor retornado debe ser de tipo number. Por ejemplo:
 
 ```javascript
-BinarioADecimal('1100'); // debe retornar 12
+BinarioADecimal("1100"); // debe retornar 12
 ```
 
 </br >
